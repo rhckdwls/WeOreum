@@ -8,6 +8,7 @@ const path = require("path");
 const hpp = require("hpp");
 const helmet = require("helmet");
 const passport = require("passport");
+const PORT = process.env.NODE_ENV === "production" ? 80 : 3095;
 
 dotenv.config();
 const { sequelize } = require("./models");
@@ -72,6 +73,4 @@ const server = app.listen(app.get("PORT"), () => {
 
 webSocket(server, app);
 
-app.listen(80, () => {
-  console.log("서버 실핼 중");
-});
+httpServer.listen(PORT);
