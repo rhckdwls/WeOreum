@@ -60,6 +60,11 @@ const config: Configuration = {
         test: /\.css?$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [

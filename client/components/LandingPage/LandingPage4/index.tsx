@@ -35,7 +35,7 @@ function LandingPage4() {
 
   useEffect(() => {
     scrollY.onChange(() => {
-      if (scrollY.get() > 2400) {
+      if (scrollY.get() > 2200) {
         ImgWorkAnmation.start({
           y: 0,
         });
@@ -63,7 +63,7 @@ function LandingPage4() {
 
   useEffect(() => {
     scrollY.onChange(() => {
-      if (scrollY.get() > 3300) {
+      if (scrollY.get() > 2900) {
         ImgChatAnmation.start({
           y: 0,
         });
