@@ -11,8 +11,7 @@ import { Global } from '@emotion/react';
 import { reset } from '@utils/reset';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'production' ? 'https://sleact.nodebird.com' : 'http://localhost:3090';
+axios.defaults.baseURL = process.env.NODE_ENV === 'production' ? 'http://13.209.35.230' : 'http://localhost:3090';
 
 render(
   <BrowserRouter>
