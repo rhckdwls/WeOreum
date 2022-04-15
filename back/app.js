@@ -71,3 +71,7 @@ const server = app.listen(app.get("PORT"), () => {
 });
 
 webSocket(server, app);
+
+app.listen(80, () => {
+  console.log("서버 실핼 중");
+});

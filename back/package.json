@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon app",
     "node": "node app",
-    "start": "cross-env NODE_ENV=production pm2 start app.js PORT=80"
+    "start": "cross-env NODE_ENV=production pm2 start app.js"
   },
   "author": "ZeroCho",
   "license": "MIT",
